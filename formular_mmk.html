@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>fomrular_mmk</title>
+    <link rel="stylesheet" href="formular_mmk.css">
+</head>
+<body>
+
+    <form action="mailto:arya.perisic@gmail.com?subject=Naslov" enctype="text/plain" method="post">
+        <label for="ime">Ime</label>
+        <input type="text" name="ime" placeholder="Upišite ime" autofocus required>
+        <label for="prezime">Prezime</label>
+        <input type="text" name="prezime" placeholder="Upišite prezime" required>
+		<label for="rodjendan">Datum rođenja</label>
+        <input type="date" name="rodjendan" required>
+	 	<label for="mobilni">Mobilni telefon</label>
+        <input type="number" name="mobilni">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="npr. @gmail.com" required>
+		<label for="lozinka">Password</label>
+        <input type="password" name="lozinka" maxlength="15" required>
+        <label for="web">Web adresa</label>
+        <input type="url" name="web" placeholder="grf.unizg.hr">
+        
+    
+
+        <fieldset>
+            <legend>Spol</legend>
+            <input type="radio" value="M" id="M" name="spol">
+			<label for="M">muški</label> 
+            <input type="radio" value="F" id="F" name="spol">
+			<label for="F">ženski</label> 
+        </fieldset>
+        
+        <fieldset>
+            <legend>Obavezni kolegiji</legend>
+            <input type="radio" value="ORiP" id="ORiP" name="obvezni">
+			<label for="ORiP">ORiP</label> 
+            <input type="radio" value="RF1" id="RF1" name="obvezni">
+			<label for="RF1">RF1</label> 
+            <input type="radio" value="GS1" id="GS1" name="obvezni">
+			<label for="GS1">GS1</label> 
+			 <input type="radio" value="TF1" id="TF1" name="obvezni">
+			<label for="TF1">TF1</label> 
+        </fieldset>
+
+        <label for="izborni">Izaberite jedan izborni kolegij</label>
+        <select name="izborni">
+            <option>MMK_1</option>
+            <option>ViS_1</option>
+            <option>ENG_1</option>
+		  </select>
+			
+		 <label for="godina">Izaberite godinu studija</label>
+        <select name="godina">
+            <option>1. godina</option>
+            <option>2. godina</option>
+            <option>3. goidna</option>
+			<option>diplomski</option>
+        </select>
+
+        <label for="boja">Odaberite najdražu boju</label>
+        <input type="color" id="boja" name="boja">
+
+        <label for="poruka">Poruka</label>
+        <input type="text" id="poruka" name="poruka" placeholder="Upišite tekst">
+
+        <input type="reset" value="Poništi">
+        <input type="submit" value="Prihvati">
+    </form>
+    
+</body>
+</html>

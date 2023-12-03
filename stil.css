@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+min-height: 100vh;
+width: 100%;
+background: linear-gradient(darkblue, black);
+overflow-x: hidden;
+transform-style: preserve-3d;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    z-index: 45;
+}
+.menu{
+    max-width: 72rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  color: white;
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    line-height: 4rem;
+}
+.logo span{
+    font-weight: 200;
+}
+.hamburger-menu{
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    display: flex;
+   align-items: center;
+ justify-content: flex-end;
+}
+.bar{
+    width: 1.9rem;
+    height: 1.5px;
+    background-color: skyblue;
+    border-radius: 4px;
+    position: relative;
+    transition: 0.5s;
+    background-color: skyblue;
+}
+.bar::after, .bar::before{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    transition: 0.5s;
+    background-color: skyblue;
+}
+.bar::before{
+    transform: translateY(-9px);
+}
+.bar::after{
+    transform: translateY(9px);
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../arya_perisic_mmk_zad6/slike/a1.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.overplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(43, 51, 59, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    max-width: 35rem;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    
+}
+h2{
+    font-family: 'Lobster', cursive;
+    color: skyblue;
+    text-align: center;
+    margin-top:2%;
+}
+#tabdiv{
+    float:right;
+    width: 40%;
+}
+  #prvat {
+      
+  border-collapse: collapse;
+  width: 100%;
+      color: white;
+      margin-top: 25px;
+      font-family: tahoma, sans-serif, serif;
+      padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      display: block;
+ 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid rgb(214, 67, 67)e3e;
+}
+.container.active .bar{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+
+.container.active .bar::before{
+    transform: translateY(0) rotate(45deg);
+}
+
+.container.active .bar::after{
+    transform: translateY(0) rotate(-45deg);
+}
+.container.active .main{
+    animation-name: main-animation 0.5 ease;
+    cursor: pointer;
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+@keyframes mani-animation{
+    from{
+            transform: translate(0);
+    }
+
+    to{
+        transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+    }
+}
+
+.links{
+    position: absolute;
+    width: 30%;
+    right: 0px;
+    top: 0;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    transition: 0.2s
+    ease;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem 0;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(10px);
+}
+.links a:hover{
+    color: white;
+}
+.links li:hover{
+    transform: scale(1.2);
+}
+.container.active .links a{
+    animation: appear 0.5s forwards ease var(--i);
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+section{
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+section h1{
+   column-span: all;
+   margin-bottom: 29px;
+   font-family: 'Domine', serif;
+   font-family: 'Lobster', cursive;
+   font-size: 30px;
+}
+section p{
+    margin-top: 25px;
+}
+footer{
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+    margin: 0 auto;
+    float: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    
+    
+    
+}
+section{
+    margin-left: 4%;
+     margin-right: 4%;
+}
+#prvi{
+    margin-left: 4%;
+     margin-right: 4%;
+}
+p{
+    font-family: tahoma, sans-serif, serif;
+}
+iframe{
+    align-content: center;
+   
+}
+.title{
+    color: pink;
+    position: absolute;
+    left: 20%;
+    bottom: 42%;
+}
+#podnaslov{
+    position: absolute;
+    bottom: 33%;
+    color: skyblue;
+    left: 13%;
+    font-size: 20px;
+    font-family: 'Lobster';
+    width: 500px;
+    
+}
+
+nav {
+  display: flex; /* 1 */
+  justify-content: space-between; /* 2 */
+  padding: 1rem 2rem; /* 3 */
+  background: black; /* 4 */
+}
+
+nav ul {
+  display: flex; /* 5 */
+  list-style: none; /* 6 */
+}
+
+nav li {
+  padding-left: 1rem; /* 7! */
+}
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  nav li {
+    padding: 0.5rem 0;
+    margin-bottom: 1%;
+  }
+} 
+#h2tab{
+    margin-top: 0%;
+}
+
+#drugidiv{
+    float: left;
+    width: 40%;
+}
+#zadatak2 {
+    margin: 50px 35px;
+    width: 400px;
+    height: 400px;
+}
+
+#zadatak2 table {
+    width: 200px;
+    height: 200px;
+    float:left;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+#rozi1 {
+    background-color:lightpink;
+    border-radius: 50px 140px 0 140px;
+}
+
+#ljubicasti1 {
+    background-color: mediumpurple;
+    border-radius: 140px 50px 140px 0;
+}
+
+#rozi2 {
+    background-color: mediumpurple;
+    border-radius: 140px 0 140px 50px ;
+}
+
+#ljubicasti2 {
+    background-color: lightpink;
+    border-radius: 0 140px 50px 140px;
+}
+
+

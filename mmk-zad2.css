@@ -1,0 +1,74 @@
+body {
+    padding-left: 15px;
+	background-color: slategrey;
+}
+#zadatak1 ol.prva {
+    font-family: "Gill Sans";
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: antiquewhite;
+   
+}
+
+#zadatak1 ol.prva li {
+    display: inline;
+    background-color: darkblue;
+
+    margin-left: 0px;
+    margin-top: 15px;
+    padding: 0 25px;
+}
+
+#zadatak1 .druga {
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    color: black;
+	margin-top: 5px;
+
+    list-style-type: upper-alpha;
+}
+
+#zadatak1 .druga em {
+    color: darkblue;
+    font: bold italic 23px/1em "Helvetica";
+}
+#zadatak1 .druga span {
+    color: darkblue;
+    font: bold italic 23px/1em "Helvetica";
+}
+#zadatak1 .druga strong {
+    color: darkblue;
+    font: bold italic 23px/1em "Helvetica";
+}
+#zadatak1 .druga, #zadatak1 .treca {
+    border-top: 1px solid #000000;
+    padding-top: 25px;
+    width: 700px;
+}
+
+#zadatak2 h1, #zadatak2 ul {
+    font-family: "Helvetica";
+	font-weight: bold;
+    color: darkblue;
+}
+
+#zadatak2 > ul {
+    border-top: 1px #000000;
+    border-bottom: 1px #000000;
+
+    width: 700px;
+    padding: 25px;
+
+    list-style-type: none;
+}
+
+#zadatak2 ul ul {
+    font-family: "Myriad Pro", cursive;
+    color: black;
+	float: none;
+	text-align: justify;
+}
+
+
+

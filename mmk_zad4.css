@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 400px 50px 400px;
+	background-color: darkcyan;
+	color: antiquewhite;
+	
+	text-align: center;
+	align-content: center;
+	
+}
+#zadatak1 h1 {
+    color: darkslateblue;
+	border-bottom-width: thick;
+    border-bottom: solid currentColor;
+	font-size: 44px;
+}
+#zadatak1 h1, #zadatak1 table {
+    width: 500px;
+	margin-left: 300px;
+	
+	
+	
+}
+#zadatak1 table {
+    border-collapse: collapse;
+	border: thin;
+	
+	
+	
+}
+#zadatak1 th {
+    font-size: 20px;
+    background-color: darkslateblue;
+	color: antiquewhite;
+    text-transform: uppercase;
+	font-weight: bold;
+    text-align: center;
+    height: 40px;
+}
+
+#zadatak1 td {
+    border: 1px solid black;
+	height: 40px;
+	text-align: center;
+}
+
+#zadatak1 tr:nth-child(2n) {
+    background-color: darkcyan;
+	height: 40px;
+	
+}
+
+/* --------------------------------------------------------------------- */
+
+#zadatak2 {
+    margin: 100px 400px 100px 300px;
+    width: 400px;
+    height: 400px;
+}
+
+#zadatak2 table {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 3px solid antiquewhite;
+    box-sizing: border-box;
+}
+
+#rozi1 {
+    background-color:lightpink;
+    border-radius: 50px 140px 0 140px;
+}
+
+#ljubicasti1 {
+    background-color: mediumpurple;
+    border-radius: 140px 50px 140px 0;
+}
+
+#rozi2 {
+    background-color: mediumpurple;
+    border-radius: 140px 0 140px 50px ;
+}
+
+#ljubicasti2 {
+    background-color: lightpink;
+    border-radius: 0 140px 50px 140px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+#zadatak3 {
+    margin: 100px 0px 1000px ;
+    clear: both;
+}
+#zadatak3 ul {
+    list-style: none;
+    padding: 0;
+	margin-left: 300px;
+	margin-bottom: 100px;
+}
+#zadatak3 li {
+    width: 500px;
+	height: 30px;
+    background-color: darkslateblue;
+    border-bottom: 1px solid antiquewhite;
+	text-align: center;
+}
+#zadatak3 li a {
+    color: antiquewhite;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#zadatak3 li:first-child a:hover {
+    font-family: Courier;
+    font-size: 22px;
+    text-shadow: 3px 3px 2px darkgrey;
+}
+#zadatak3 li:nth-child(2) a:hover {
+    font-style: italic;
+	color: darkgrey;
+}
+#zadatak3 li:nth-child(3) a:hover {
+	text-decoration: underline;
+	color: darkgrey;
+}
+#zadatak3 li:nth-child(4) a:hover {
+    color: darkgrey;
+}
+#zadatak3 li:nth-child(5) a:hover {
+    background-color: darkgrey;
+	
+}
+
+#zadatak3 h1 {
+    text-transform: uppercase;
+    color: darkslateblue;
+	margin-top: 100px;
+}
+}
