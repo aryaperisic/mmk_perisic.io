@@ -84,7 +84,7 @@ transform-style: preserve-3d;
 header{
     min-height: 100vh;
     width: 100%;
-    background-image: url("../mmk_perisic/slike/a1.jpg");
+    background-image:url("slike/a1.jpg") ;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
