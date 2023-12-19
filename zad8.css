@@ -1,0 +1,87 @@
+body{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    background-color:#333131;
+}
+@font-face {
+font-family: "APfont";
+src: url("apf.ttf");
+}
+#div {
+	 width: 900px;
+    padding-top: 20px;
+    margin-left: 35%;
+    color: white;
+    text-align: justify;
+    background-color: #333131;
+
+}
+#div1 {
+	
+	width: 500px;
+	height: 625px;
+	align-content: center;
+	
+	background: url("slike/mar1.jpeg");
+	border: 1px solid thin #B4B392;
+	transition: 7s ease-out;
+	
+	
+	
+}
+#div1:hover {
+	background: url("slike/mar2.jpeg");
+	
+}
+#div2{
+	margin-top:150px;
+	width: 500px;
+	height: 667px;
+	transform: translate3d(-50px,-100px,-300px);
+	transform-style: preserve-3d;
+	opacity: .5;
+	background: url("slike/mar3.jpg");
+}
+#div3{
+	background: url("slike/mar3.jpg");
+	margin-top:150px;
+	width: 500px;
+	height: 667px;
+	transform-style: preserve-3d;
+}
+#div4{
+	margin-top:150px;
+	width: 500px;
+	height: 667px;
+	transform: scale3d(.7,.7,.2);
+	transform-style: preserve-3d;
+	background: url("slike/mar4.jpg");
+}
+#div5{
+	margin-top:150px;
+	width: 500px;
+	height: 667px;
+	
+	transform-style: preserve-3d;
+	background: url("slike/mar4.jpg");
+}
+#div6{
+	margin-top:150px;
+	width: 500px;
+	height: 667px;
+	transform: skew(20deg,5deg);
+	transform-style: preserve-3d;
+	background: url("slike/mar5.jpg");
+}
+#div7{
+	margin-top:150px;
+	width: 500px;
+	height: 667px;
+	background: url("slike/mar6.jpg");
+	cursor: pointer;
+	
+}
+#div7:active{
+	opacity: .5;
+}
