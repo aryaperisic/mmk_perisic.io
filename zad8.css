@@ -42,6 +42,7 @@ src: url("apf.ttf");
 	transform-style: preserve-3d;
 	opacity: .5;
 	background: url("slike/mar3.jpg");
+	
 }
 #div3{
 	background: url("slike/mar3.jpg");
@@ -49,7 +50,21 @@ src: url("apf.ttf");
 	width: 500px;
 	height: 667px;
 	transform-style: preserve-3d;
+	animation: a1 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	
 }
+@keyframes a1 {
+	from {transform: translateX(0);}
+	to {transform: translateX(-100px);}
+}
+@-webkit-keyframes a1 {
+	from {transform: translateX(0);}
+	to {transform: translateX(-100px);}
+}
+
 #div4{
 	margin-top:150px;
 	width: 500px;
@@ -65,6 +80,15 @@ src: url("apf.ttf");
 	
 	transform-style: preserve-3d;
 	background: url("slike/mar4.jpg");
+	animation: a2 15s linear infinite;
+}
+@keyframes a2 {
+	from {transform-origin: 50% 50%;}
+	to {transform: rotate(360deg);}
+}
+@-webkit-keyframes a2 {
+	from {transform-origin: 50% 50%;}
+	to {transform: rotate(180deg);}
 }
 #div6{
 	margin-top:150px;
@@ -73,6 +97,18 @@ src: url("apf.ttf");
 	transform: skew(20deg,5deg);
 	transform-style: preserve-3d;
 	background: url("slike/mar5.jpg");
+	animation: a3 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+@keyframes a3 {
+	from {transform-origin: 50% 50%;}
+	to {transform: rotate(360deg);}
+}
+@-webkit-keyframes a3 {
+	from {transform-origin: 50% 50%;}
+	to {transform: rotate(90deg);}
 }
 #div7{
 	margin-top:150px;
@@ -80,8 +116,19 @@ src: url("apf.ttf");
 	height: 667px;
 	background: url("slike/mar6.jpg");
 	cursor: pointer;
-	
+	animation: a4 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
 }
 #div7:active{
 	opacity: .5;
+}
+@keyframes a4 {
+	from {transform: scale(1,1);}
+	to {transform: scale(1.2,1.2);}
+}
+@-webkit-keyframes a4 {
+	from {transform: translateX(0);}
+	to {transform: translateX(-100px);}
 }
