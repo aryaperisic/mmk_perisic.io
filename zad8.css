@@ -132,3 +132,144 @@ src: url("apf.ttf");
 	from {transform: translateX(0);}
 	to {transform: translateX(-100px);}
 }
+.vanjski {
+	perspective: 2000px;
+	width: 800px;
+	height: 800px;
+}
+.unutarnji {
+	transform-style: preserve-3d;
+	margin: 100px;
+	width: 800px;
+	height: 600px;
+	transform: rotate(10deg) rotateX(45deg);
+	animation: a5 5s linear 10s forwards;
+}
+@keyframes a5 {
+	0% {transform: rotate(10deg) rotateX(45deg);}
+	50% {transform: rotate3d(1,1,1,180deg);}
+	90% {transform: rotate3d(1,1,0,360deg);}
+	100% {transform: rotate(10deg) rotateX(45deg);}
+}
+@-webkit-keyframes a5 {
+	0% {transform: rotate(10deg) rotateX(45deg);}
+	50% {transform: rotate3d(1,1,1,180deg);}
+	90% {transform: rotate3d(1,1,0,360deg);}
+	100% {transform: rotate(10deg) rotateX(45deg);}
+}
+.strane {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	opacity: 0.8;
+}
+.s1 {
+	background: url("slike/koc6.jpg");
+	top: 200px;
+	left: 0px;
+	transform-origin: 100% 0%;
+	animation: a6 2s linear 2s forwards;
+}
+@keyframes a6{
+	100% {transform: rotateY(90deg);}
+}
+@-webkit-keyframes a6{
+	100% {transform: rotateY(90deg);}
+}
+.s3 {
+	background: url("slike/koc7.jpg");
+	top: 0px;
+	left: 200px;
+	transform-origin: 0% 100%;
+	animation: a7 2s linear 4s forwards;
+}
+@keyframes a7{
+	100% {transform: rotateX(-90deg);}
+}
+@-webkit-keyframes a7{
+	100% {transform: rotateX(-90deg);}
+}
+.s4 {
+	background: url("slike/koc8.jpg");
+	top: 400px;
+	left: 200px;
+	transform-origin: 0% 0%;
+	animation: a8 2s linear 6s forwards;
+}
+@keyframes a8{
+	100% {transform: rotateX(90deg);}
+}
+@-webkit-keyframes a8{
+	100% {transform: rotateX(90deg);}
+}
+.s6 {
+	background: url("slike/koc9.jpg");
+	opacity: 0.8;
+	top: 0px;
+	left: 0px;
+}
+.dva {
+	position: absolute;
+	left: 400px;
+	top: 200px;
+	width: 400px;
+	height: 200px;
+	transform-origin: 0% 0%;
+	transform-style: preserve-3d;
+	animation: a9 2s linear 8s forwards;
+}
+@keyframes a9{
+	100% {transform: rotateY(-90deg);}
+}
+@-webkit-keyframes a9{
+	100% {transform: rotateY(-90deg);}
+}
+.s5 {
+	background: url("slike/koc10.jpg");
+	opacity: 0.8;
+	top: 0px;
+	left: 200px;
+	transform-origin: 0% 0%;
+	animation: a10 2s linear 10s forwards;
+}
+@keyframes a10{
+	100% {transform: rotateY(-90deg);}
+}
+@-webkit-keyframes a10{
+	100% {transform: rotateY(-90deg);}
+}
+.ps3 {
+	width:200px;
+	height: 200px;
+}
+.ps1 {
+	width:200px;
+	height: 200px;
+	backface-visibility: hidden;
+	background: url("slike/maro2.jpg");
+	transform: rotateY(180deg);
+	animation: a11 5s linear forwards 3;
+}
+@keyframes a11 {
+	50% {transform: rotateY(360deg);}
+	100% {transform: rotateY(540deg);}
+}
+@-webkit-keyframes a11 {
+	50% {transform: rotateY(360deg);}
+	100% {transform: rotateY(540deg);}
+}
+.ps2 {
+	width:200px;
+	height: 200px;
+	backface-visibility: visible;
+	background: url("slike/maro1.jpg");
+	animation: a12 5s linear forwards 3;
+}
+@keyframes a12 {
+	50% {transform: rotateY(180deg);}
+	100% {transform: rotateY(360deg);}
+}
+@-webkit-keyframes a12 {
+	50% {transform: rotateY(180deg);}
+	100% {transform: rotateY(360deg);}
+}
